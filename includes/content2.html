@@ -1,0 +1,66 @@
+<!-- #include virtual="/usc/_include/uscGlobals.asp" -->
+<%
+var szURL = "/usc/_bt_appredir.asp";
+
+var pExecApplyNow = new Parameters( szURL, null );
+	pExecApplyNow.AddQS();
+	pExecApplyNow.Add("app=UNSOL&sc=4XEIW764&m=9000111111W&B=A&ID=3001");
+	pExecApplyNow.Add( "TID", "133075" );
+
+var szTenTwelve = GetAffiliate();
+if( szTenTwelve != null && szTenTwelve != " " && szTenTwelve != undefined )
+{
+	var szM10_12 = InsertAffiliate("9000111111W", szTenTwelve);
+	pExecApplyNow.Add("m", szM10_12);
+}
+
+pExecApplyNow.Remove( "ef_id" );
+
+%>
+<div id="bdy_top_elements" class="bdy_elements">
+		<div class="bdy_img"> <img src="img/img_exec_desk_bdy.jpg" width="421" height="392" class="bdy_desk_img">
+			<img src="img/img_exec_tablet_bdy.jpg" class="bdy_tab_img">
+			<img src="img/img_exec_mobile_bdy.jpg" class="bdy_mob_img">
+		</div>
+		<div class="element_text">
+		<h3>CITI EXECUTIVE<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD ELITE&trade; MASTERCARD<sup>&reg;*</sup></h3>
+			<h1>A card that’s in a class by itself</h1>
+			<p><span>Earn 50,000</span> <nobr>American Airlines AAdvantage<sup>&reg;</sup></nobr> bonus miles after making $5,000 in purchases in the first 3 months of cardmembership.<sup>1</sup></p>
+			<ul>
+			<li><img src="img/icn_bdy_exec_admirals_club.png" width="105" height="43" class="bdy_icn_img_exec"> <span>Exceptional<br />Membership<sup>2</sup></span> </li>
+				<li class="divisor_exec"><img src="img/icn_bdy_platinum_first_checked.png" width="49" height="43" class="bdy_icn_img"> <span>First Checked<br />
+					Bag Free<sup>&dagger;</sup></span> </li>
+				<li class="divisor"><img src="img/icn_bdy_platinum_group1.png" width="49" height="43" class="bdy_icn_img"> <span>Enhanced Airport Experience<sup>3</sup></span> </li>
+				<li><img src="img/icn_bdy_platinum_double_miles.png" width="49" height="43" class="bdy_icn_img"> <span>Double Miles<br />
+					Opportunity<sup>4</sup></span> </li>
+			</ul>
+			<div class="bdy_wrap_first">
+				<p>$450 Annual fee<sup>5</sup></p>
+				<a href="<%= pExecApplyNow.GetStringURL() %>" class="btn btn-success " role="button" target="_blank" title="Apply Now">Apply Now</a>
+				<!--<span class="callback_number">or call 1-888-645-3706</span>-->
+			</div>
+		</div>
+	</div>
+	<div id="bdy_bottom_elements" class="bdy_elements">
+		<div class="bdy_img"> <div class="bdy_wrap"><img src="img/img_bdy_exec_card.png" width="273" height="188" class="bdy_card">
+			<p id="card_text"><nobr>CITI EXECUTIVE<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup></nobr><br />WORLD ELITE&trade; MASTERCARD<sup>&reg;</sup></p>
+			<a href="<%= pExecApplyNow.GetStringURL() %>" class="btn btn-success " role="button" target="_blank" title="Apply Now">Apply Now</a>
+			<!--<span class="callback_number desktop_only">or call 1-888-645-3706</span>-->
+			</div></div>
+		<div id="bullets_text">
+			<ul>
+				<li><nobr>Admirals&nbsp;Club<sup>&reg;</sup></nobr> membership for you with guest privileges.<sup>2</sup></li>
+				<li>Enhanced airport experience with dedicated check-in and priority screening and boarding.<sup>3</sup></li>
+				<li>Your first checked bag is free for you and up to eight traveling companions.<sup>&dagger;</sup></li>
+				<li>10,000 Elite Qualifying Miles from <nobr>American&nbsp;Airlines</nobr> after $40,000 spent in purchases each calendar year.<sup>6</sup></li>
+				<li>Earn 2 AAdvantage<sup>&reg;</sup> miles for every $1 spent on eligible <nobr>American&nbsp;Airlines</nobr> purchases, including US Airways codeshare flights booked through <nobr>American&nbsp;Airlines</nobr>.<sup>4</sup> Plus, earn 1 AAdvantage<sup>&reg;</sup> mile per $1 spent on other purchases.<sup>7</sup></li>
+				<li>No Foreign Transaction Fees on purchases.<sup>5</sup></li>
+				<li>Dedicated concierge service 24 hours a day.</li>
+				<li>Receive a 25% savings on in-flight food and beverage purchases when you use your <nobr>Citi<sup>&reg;</sup> / AAdvantage<sup>&reg;</sup></nobr> card on <nobr>American&nbsp;Airlines</nobr> flights.<sup>8</sup></li>
+				<li>Enjoy these VIP benefits for an annual fee of $450.<sup>5</sup></li>
+			</ul>
+			<div class="anshow bdy_wrap_first">
+			<a href="<%= pExecApplyNow.GetStringURL() %>" title="Apply Now" target="_blank" role="button" class="btn btn-success ">Apply Now</a>
+			<span class="callback_number mobile_only">or call 1-888-645-3706</span></div>
+		</div>
+	</div>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<%@ Language="JavaScript" %>
+<!-- #include virtual="/_scripts/_tracking.asp" -->
+<!-- #include virtual="/usc/_include/uscGlobals.asp" -->
+<%
+Response.Expires = -1;
+
+var szDefaultBTData = "PMI.B.gAAAf.J.UL.BDl2.KML.hoK.E";
+TrackSplash( szDefaultBTData );
+
+%>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <title>Citi&reg;</title>
+        <meta name="description" content="">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.pageslide.css" />
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<style>html{display : none ; }</style>
+		<script language="javascript">
+		if( self == top ) {
+		document.documentElement.style.display = 'block' ;
+		} else {
+		top.location = self.location ;
+		}
+		</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="navrezfix" class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="#modal" class="second navbar-toggle  pull-left" ><img src="img/aalp_mobile_menu_icon.png" alt="Menu Icon" height="16" width="11"></a>
+              <a class="navbar-brand pull-right" href="javascript:void();" style="cursor: default;" title="Citi&reg; | American Airlines AAdvantage"><img src="img/aalp_mobile_aadvantage_icon.png" alt="logo aadvantage" height="33" width="197"></a>
+            </div>
+          </div>
+          <span id="titlemnav">Navigate Your Way To A Perfect Offer</span>
+        </div>
+
+        <!--<div id="myCarousel" class="container carousel slide">-->
+        <div id="myCarousel" class="carousel"> <!-- no slide anim -->
+           <!-- Controls buttons -->
+           <div class="c-controls navbar-fixed-top" style="text-align:center;">
+            <div class="container row">
+              <div id="sl1" class="col-md-4 btn slide-one">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_platinum_card.png" alt="Menu Icon">			
+
+						<div>CITI<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> PLATINUM SELECT<sup>&reg;</sup> CARD</div>
+                      <!--  <div>CITI<sup>&reg;</sup> PLATINUM SELECT<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD MASTERCARD<sup>&reg;*</sup></div>-->
+                      </span> 
+                      <img class="menu-active-arrow" width="300" height="28" src="img/over_arrow.png" alt="Menu Icon">                 
+              </div>
+              <div id="sl2" class="col-md-4 btn slide-two">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_exec_card.png" alt="Menu Icon">
+					
+                        <div>CITI<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> EXECUTIVE CARD</div>
+                      </span> 
+                      <img class="menu-active-arrow" width="300" height="28" src="img/over_arrow.png" alt="Menu Icon">                 
+              </div>
+              <div id="sl3" class="col-md-4 btn slide-three">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_bus_card.png" alt="Menu Icon">
+                        <div>CITIBUSINESS<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD MASTERCARD<sup>&reg;</sup></div>
+                      </span>      
+                      <img class="menu-active-arrow" width="300" height="28" src="img/over_arrow.png" alt="Menu Icon">              
+              </div>
+            </div>
+            <div class="header-shadow"></div>
+           </div>
+           <!-- Carousel items -->
+           <div class="container carousel-inner">
+
+                  <div id="slide1" class="item">
+                      <div id="content1" class="container percentage-copy"></div>
+                      <div id="disclosure1"></div>
+                  </div>
+
+                  <div id="slide2"  class="item">
+                      <div id="content2" class="container percentage-copy"></div>
+                      <div id="disclosure2"></div>
+                  </div>
+
+                  <div id="slide3"  class="item">
+                      <div id="content3" class="container percentage-copy"></div>
+                      <div id="disclosure3"></div>
+                  </div>
+           </div>
+        </div>
+
+        <div id="modal" class="navbar-collapse collapse">
+              
+              <div class="navbar-right btn slide-one">
+                <li class="item-with-ul">
+                    <a href="javascript:$.pageslide.close()">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_platinum_card_mobile.png" alt="Menu Icon">
+                        <div>CITI<sup>&reg;</sup> PLATINUM SELECT<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD MASTERCARD<sup>&reg;*</sup></div>
+                      </span>  
+                    </a>
+      
+                    <span class="touch-button">
+                        <i class="navicon"><img width="11" height="16" alt="Menu Icon" src="img/aalp_mobile_submenu_icon.png"></i>
+                    </span>
+                </li>
+              </div>
+              <div class="navbar-right btn slide-two">
+                 <li class="item-with-ul">
+                    <a href="javascript:$.pageslide.close()">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_exec_card_mobile.png" alt="Menu Icon">
+                        <div>CITI EXECUTIVE<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD ELITE™ MASTERCARD<sup>&reg;*</sup></div>
+                      </span>  
+                    </a>
+
+                    <span class="touch-button">
+                        <i class="navicon"><img width="11" height="16" alt="Menu Icon" src="img/aalp_mobile_submenu_icon.png"></i>
+                    </span>
+                </li>               
+              </div>          
+              <div class="navbar-right btn slide-three">
+                <li class="item-with-ul">
+                    <a href="javascript:$.pageslide.close()">
+                      <span>
+                        <img width="110" height="64" src="img/icn_menu_bus_card_mobile.png" alt="Menu Icon">
+                        <div>CITIBUSINESS<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD MASTERCARD<sup>&reg;*</sup></div>
+                      </span>  
+                    </a>
+
+                    <span class="touch-button">
+                        <i class="navicon"><img width="11" height="16" alt="Menu Icon" src="img/aalp_mobile_submenu_icon.png"></i>
+                    </span>
+                </li>
+              </div>  <!--<div class="header-shadow"></div> -->
+        </div><!--/.navbar-collapse --> 
+								
+								<div  style="background:url(../../../Assets/41003-AAFamily-LP-ALT-320.jpg) no-repeat 0 0; position:absolute; top:-56px; left:-140px; opacity:0.4; display:none; width:650px; height:1814px;"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/vendor/jquery.pageslide.min.js"></script>
+        <script>       
+            /* Slide to the left, and make it model (you'll have to call $.pageslide.close() to close) */
+            $(".second").pageslide({ direction: "left", modal: true });
+        </script>
+		<!-- Begin BlueKai Tag -->
+		<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+		<script type="text/javascript" src="//tags.bkrtx.com/js/bk-coretag.js"></script>
+		<script type="text/javascript">
+
+		// INSERT DATA HERE IN THE FORM:
+		// bk_addPageCtx("<<SOMEKEY>>", "<<SOMEVALUE>>");
+
+		bk_doJSTag(16329, 4);
+
+		</script>
+		<!-- End BlueKai Tag -->
+		<script>document.write('<s'+'cript language="JavaScript" src="//jact.atdmt.com/jaction/137738_USC_2014_Aug_Travel_AA_Multi_Prod_LP_Int"></s'+'cript>')</script>
+		<noscript><iframe src="//iact.atdmt.com/iaction/137738_USC_2014_Aug_Travel_AA_Multi_Prod_LP_Int" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe></noscript>
+		<% var szSiteCatalystPageName = "2014_Aug_USC_AA_Travel_Multi_Product_Internal"; %>
+		<!-- #include virtual="/usc/_include/SiteCatalyst_2011/_SiteCatalyst _pagecode.asp" -->
+    </body>
+</html>

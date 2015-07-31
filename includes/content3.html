@@ -1,0 +1,62 @@
+<!-- #include virtual="/usc/_include/uscGlobals.asp" -->
+<%
+var szURL = "/usc/_bt_appredir.asp";
+	
+var pBizApplyNow = new Parameters( szURL, null );
+	pBizApplyNow.AddQS();
+	pBizApplyNow.Add("app=UNSOL&sc=6HXZE9V4&m=8000111111W&langId=EN&siteId=BAO&B=A&screenID=3006");
+	pBizApplyNow.Add( "TID", "17781" );
+	
+var szTenTwelve = GetAffiliate();
+if( szTenTwelve != null && szTenTwelve != " " && szTenTwelve != undefined )
+{ 
+	var szM10_12 = InsertAffiliate("8000111111W", szTenTwelve);	
+	pBizApplyNow.Add("m", szM10_12);
+}
+
+pBizApplyNow.Remove( "ef_id" );
+
+%>
+<div id="bdy_top_elements" class="bdy_elements">
+		<div class="bdy_img"> 
+			<img src="img/img_business_desk_bdy.jpg" width="421" height="392" class="bdy_desk_img"> 
+			<img src="img/img_business_tablet_bdy.jpg" class="bdy_tab_img"> 
+			<img src="img/img_business_mobile_bdy.jpg" class="bdy_mob_img"> 
+		</div>
+		<div class="element_text">
+		<h3>CITIBUSINESS<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup> WORLD MASTERCARD<sup>&reg;*</sup></h3>
+			<h1>A travel card that means business</h1>
+			<p><span>Earn 30,000</span> <nobr>American Airlines AAdvantage<sup>&reg;</sup></nobr> bonus miles and <span class="bold">2 <nobr><nobr>Admirals&nbsp;Club<sup>&reg;</sup></nobr></nobr> One-Day Passes<sup>++</sup></span> after making $1,000 in purchases within the first 3 months of cardmembership.<sup>1</sup></p>
+			<ul>
+				<li><img src="img/icn_bdy_platinum_first_checked.png" width="49" height="43" class="bdy_icn_img"> <span>First Checked
+					Bag Free<sup>&dagger;</sup></span> </li>
+				<li class="divisor"><img src="img/icn_bdy_platinum_group1.png" width="49" height="43" class="bdy_icn_img"> <span>Group 1
+					Boarding<sup>2</sup></span> </li>
+				<li><img src="img/icn_bdy_platinum_double_miles.png" width="49" height="43" class="bdy_icn_img"> <span>Double Miles
+					Opportunity<sup>3,4</sup></span> </li>
+			</ul>
+			<div class="bdy_wrap_first">
+			<p class="white_text">$0 Annual fee for the first 12 months, then $95<sup>7</sup></p>
+			<a href="<%= pBizApplyNow.GetStringURL() %>" class="btn btn-success " role="button" target="_blank" title="Apply Now">Apply Now</a> </div></div>
+	</div>
+	<div id="bdy_bottom_elements" class="bdy_elements">
+		<div class="bdy_img"> <div class="bdy_wrap"><img src="img/img_bdy_business_card.png" width="273" height="188" class="bdy_card">
+			<p id="card_text">CITIBUSINESS<sup>&reg;</sup> / AADVANTAGE<sup>&reg;</sup><br />PLATINUM SELECT<sup>&reg;</sup> MASTERCARD<sup>&reg;</sup></p>
+			<a href="<%= pBizApplyNow.GetStringURL() %>" class="btn btn-success " role="button" target="_blank" title="Apply Now">Apply Now</a>
+			</div></div>
+		<div id="bullets_text">
+			<ul>
+				<li>Get the first checked bag free for you and up to 4 travel companions.<sup>&dagger;</sup></li>
+				<li>Enjoy Group 1 Boarding and use the extra time to prepare for your flight.<sup>2</sup></li>
+				<li>Earn 2 AAdvantage<sup>&reg;</sup> miles for every $1 spent on eligible <nobr>American&nbsp;Airlines</nobr> purchases, including US Airways codeshare flights booked through <nobr>American&nbsp;Airlines</nobr><sup>3</sup>, and on purchases at certain office supply, telecommunications and car rental merchants.<sup>4</sup> Earn 1 AAdvantage<sup>&reg;</sup> mile per $1 spent on other purchases.<sup>5</sup></li>
+				<li>Receive a 25% savings on in-flight food and beverage purchases when you use your card on <nobr>American&nbsp;Airlines</nobr> flights.<sup>6</sup></li>
+				<li>Dedicated Small Business Customer Service Center.</li>
+				<li>Annual fee of $95 is waived for the first 12 months.<sup>7</sup></li>
+				<li>Renew your annual cardmembership and earn a 5% AAdvantage<sup>&reg;</sup> mileage bonus based upon eligible purchases made during the cardmembership year.<sup>8</sup></li>
+				<li>Earn an <nobr>American&nbsp;Airlines</nobr> Companion Certificate for domestic main cabin travel after you spend $30,000 or more in purchases each cardmembership year and cardmembership is renewed. Redeeming the certificate costs $99 for the ticketing fee, plus $21.60 to $43.20 in government taxes and fees based on itinerary.<sup>9</sup></li>
+			</ul>
+			<div class="anshow bdy_wrap_first">
+			<a href="<%= pBizApplyNow.GetStringURL() %>" title="Apply Now" target="_blank" role="button" class="btn btn-success ">Apply Now</a> </div>
+		</div>
+	</div>
+
